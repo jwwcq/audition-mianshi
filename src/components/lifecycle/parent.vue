@@ -4,7 +4,7 @@
     <child :count="count"></child>
     <button @click="count++">click {{ count }}</button>
 
-    <!-- 
+    <!--
     1. 父子组件加载: 父beforecreate -> 父created -> 父beforeMount -> 子beforeCreate
     -> 子created -> 子beforeMount -> 子mounted -> 父mounted 
     

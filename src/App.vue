@@ -1,16 +1,18 @@
 <template>
   <div class="app">
-    <myTest></myTest>
+    <myTest v-if="show"></myTest>
   </div>
 </template>
 <script>
-import myTest from "./components/v-model和.sync";
+import myTest from "./components/v-model和.sync/index.vue";
 export default {
   components: {
     myTest,
   },
   data() {
-    return {};
+    return {
+      show: true,
+    };
   },
 };
 </script>
